@@ -1,0 +1,15 @@
+# Sources (2026-10-06): https://platform.acedata.cloud/models/gpt-4.1-mini
+# https://platform.acedata.cloud/api/v1/models/catalog/?modality=chat
+# USD/MTok at the entry recharge tier: $7 / 40 Credits = $0.175/Credit.
+# Larger recharge tiers and account discounts can lower the effective price.
+# Chat Completions accepts text/image inputs; PDF file inputs are not advertised.
+base_model = "openai/gpt-4.1-mini"
+
+[cost]
+input = 0.147173075
+output = 0.58869265
+cache_read = 0.036793225
+
+[modalities]
+input = ["text", "image"]
+output = ["text"]
