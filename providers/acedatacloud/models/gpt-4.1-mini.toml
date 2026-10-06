@@ -12,4 +12,3 @@ cache_read = 0.036793225
 
 [modalities]
 input = ["text", "image"]
-output = ["text"]
