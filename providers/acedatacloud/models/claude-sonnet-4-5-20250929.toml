@@ -6,6 +6,7 @@
 # Host API evidence: definition.paths[/v1/chat/completions].post.requestBody
 # .content[application/json].schema.properties.reasoning_effort exposes an effort enum.
 # That schema has no thinking or budget_tokens control; do not copy native Messages controls.
+# Same-prompt low/high probes returned the correct answer; reported reasoning tokens: 57/61.
 # cache_write is the default 5-minute cache TTL.
 base_model = "anthropic/claude-sonnet-4-5-20250929"
 reasoning_options = [{ type = "effort", values = ["low", "medium", "high"] }]

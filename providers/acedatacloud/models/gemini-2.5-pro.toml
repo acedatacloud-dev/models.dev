@@ -8,6 +8,7 @@
 # The endpoint schema does not expose native thinking_budget or generationConfig fields.
 # Live 2026-10-06: reasoning_effort=low returned HTTP 200 with a completed answer.
 # Invalid-effort probe returned HTTP 400 explicitly listing low/medium/high.
+# Same-prompt low/high probes returned the correct answer; reported reasoning tokens: 360/548.
 base_model = "google/gemini-2.5-pro"
 reasoning_options = [{ type = "effort", values = ["low", "medium", "high"] }]
 

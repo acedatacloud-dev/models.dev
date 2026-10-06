@@ -7,6 +7,8 @@
 # .content[application/json].schema.properties.reasoning_effort enumerates minimal/low/medium/high.
 # The endpoint schema does not expose native thinking_budget or generationConfig fields.
 # Live 2026-10-06: reasoning_effort=low returned HTTP 200 with a completed answer.
+# Live minimal probe returned HTTP 400 explicitly listing low/medium/high.
+# Same-prompt low/high probes returned the correct answer; reported reasoning tokens: 341/670.
 base_model = "google/gemini-2.5-flash"
 reasoning_options = [{ type = "effort", values = ["low", "medium", "high"] }]
 
