@@ -1,0 +1,20 @@
+# Public catalog: https://platform.acedata.cloud/models/claude-haiku-4-5-20251001
+# Billing and protocol: https://platform.acedata.cloud/api/v1/apis/6b2b437b-b6d5-466c-8750-b16650072593
+# USD/MTok checked 2026-10-06: $7 / 40 Credits = $0.175/Credit.
+# Larger recharge packages and account discounts can lower effective prices.
+# reasoning_effort on the Chat Completions endpoint (not native Messages budgets)
+# cache_write is the default 5-minute cache TTL.
+base_model = "anthropic/claude-haiku-4-5-20251001"
+reasoning_options = [{ type = "effort", values = ["low", "medium", "high"] }]
+
+[modalities]
+input = ["text", "image"]
+
+[cost]
+input = 0.367932775
+output = 1.839664225
+cache_read = 0.036793225
+cache_write = 0.4599161
+
+[provider]
+api = "https://api.acedata.cloud/v1"
